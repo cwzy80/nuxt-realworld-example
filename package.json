@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-realworld-example",
+  "version": "1.0.0",
+  "description": "使用 nuxt 实现 realworld",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yy201026/nuxt-realworld-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yy201026/nuxt-realworld-example/issues"
+  },
+  "homepage": "https://github.com/yy201026/nuxt-realworld-example#readme",
+  "dependencies": {
+    "nuxt": "^2.15.2"
+  }
+}
