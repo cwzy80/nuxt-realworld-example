@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/yy201026/nuxt-realworld-example#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "nuxt": "^2.15.2"
   }
 }
