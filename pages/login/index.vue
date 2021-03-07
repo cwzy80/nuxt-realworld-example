@@ -89,7 +89,8 @@
             : await register({
                 user: this.user,
               })
-          //登录成功跳转首页
+          // 存储用户状态
+          // 跳转首页
           this.$router.push('/')
         } catch (err) {
           this.errors = err.response.data.errors
