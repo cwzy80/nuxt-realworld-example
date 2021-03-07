@@ -50,6 +50,8 @@
 
 <script>
   export default {
+    //执行页面渲染前先执行中间件，单个可以传字符串，多个传入数组
+    middleware: 'auth',
     name: 'Editor',
   }
 </script>

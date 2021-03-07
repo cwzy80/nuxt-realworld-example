@@ -62,7 +62,12 @@
 
 <script>
   import { login, register } from '@/api/user'
+
+  // 只在客户端加载 js-cookie
+  const Cookie = process.client ? require('js-cookie') : undefined
+
   export default {
+    middleware: 'notAuth',
     name: 'Login',
     computed: {
       isLogin() {
@@ -90,11 +95,13 @@
                 user: this.user,
               })
           // 存储用户状态
+          this.$store.commit('setUser', data.user)
+          // 持久化
+          Cookie.set('user', data.user)
           // 跳转首页
           this.$router.push('/')
         } catch (err) {
           this.errors = err.response.data.errors
-          console.log(this.errors)
         }
       },
     },
