@@ -47,8 +47,10 @@
   export default {
     name: 'ArticleMeta',
     props: {
-      article: Object,
-      required: true,
+      article: {
+        type: Object,
+        required: true,
+      },
     },
   }
 </script>
